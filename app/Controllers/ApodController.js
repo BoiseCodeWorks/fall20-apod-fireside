@@ -32,6 +32,7 @@ export default class ApodController {
       let form = event.target
       let date = form.date.value
       apodService.search(date)
+      form.reset()
     } catch (error) {
       console.error(error);
     }
